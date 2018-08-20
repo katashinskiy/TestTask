@@ -1,8 +1,6 @@
-package com.testProject.mainFigure;
+package com.testProject.figure;
 
-import com.testProject.interf.MainFigure;
-
-public abstract class Figure implements MainFigure {
+public class Figure implements MainFigure {
 
     private final String[] colors = {"Red", "Green", "Blue", "Grey", "Black", "Purple", "Yellow", "White", "Golden", "Silver"};
 

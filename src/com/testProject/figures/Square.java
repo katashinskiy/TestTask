@@ -1,6 +1,6 @@
 package com.testProject.figures;
 
-import com.testProject.mainFigure.Figure;
+import com.testProject.figure.Figure;
 
 public class Square extends Figure {
 
@@ -19,7 +19,7 @@ public class Square extends Figure {
 
     @Override
     public int getSquare() {
-        return side*side;
+        return side * side;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class Square extends Figure {
         return super.getColor();
     }
 
-    public int getSide(){
+    public int getSide() {
         return side;
     }
 

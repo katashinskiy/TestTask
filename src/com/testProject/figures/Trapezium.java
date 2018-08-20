@@ -1,6 +1,6 @@
 package com.testProject.figures;
 
-import com.testProject.mainFigure.Figure;
+import com.testProject.figure.Figure;
 
 public class Trapezium extends Figure {
 
@@ -24,7 +24,7 @@ public class Trapezium extends Figure {
 
     @Override
     public int getSquare() {
-        return (baseA* baseB)/2*h;
+        return (baseA * baseB) / 2 * h;
     }
 
     @Override
@@ -56,8 +56,8 @@ public class Trapezium extends Figure {
         this.h = h;
     }
 
-    public int getMiddleLine(){
-        return (int) baseA*baseB/2;
+    public int getMiddleLine() {
+        return baseA * baseB / 2;
     }
 
     public String getNameFigure() {
@@ -66,7 +66,7 @@ public class Trapezium extends Figure {
 
     @Override
     public String toString() {
-        return " Figure : " + NAME_FIGURE + ", square = " + getSquare() + " m2" + ", Middle line = " + getMiddleLine()+ "M" + ", Color = " + getColor();
+        return " Figure : " + NAME_FIGURE + ", square = " + getSquare() + " m2" + ", Middle line = " + getMiddleLine() + "M" + ", Color = " + getColor();
     }
 
 }

@@ -1,13 +1,13 @@
 package com.testProject.figures;
 
-import com.testProject.mainFigure.Figure;
+import com.testProject.figure.Figure;
 
 import static java.lang.Math.PI;
 import static java.lang.Math.pow;
 
 public class Circle extends Figure {
 
-    private int radiuse;
+    private int radius;
 
     private int length;
 
@@ -17,14 +17,14 @@ public class Circle extends Figure {
 
     }
 
-    public Circle(int radiuse) {
+    public Circle(int radius) {
         super();
-        this.radiuse = radiuse;
+        this.radius = radius;
     }
 
     @Override
     public int getSquare() {
-        return (int) (PI*pow(radiuse,2));
+        return (int) (PI * pow(radius, 2));
     }
 
     @Override
@@ -32,16 +32,16 @@ public class Circle extends Figure {
         return super.getColor();
     }
 
-    public int getRadiuse() {
-        return radiuse;
+    public int getRadius() {
+        return radius;
     }
 
-    public void setRadiuse(int radiuse) {
-        this.radiuse = radiuse;
+    public void setRadius(int radius) {
+        this.radius = radius;
     }
 
     public int getLength() {
-        return (int) (2*PI+radiuse);
+        return (int) (2 * PI + radius);
     }
 
     @Override

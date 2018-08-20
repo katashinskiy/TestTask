@@ -1,6 +1,6 @@
 package com.testProject.figures;
 
-import com.testProject.mainFigure.Figure;
+import com.testProject.figure.Figure;
 
 public class Triangle extends Figure {
     private int Kat1;
@@ -18,13 +18,13 @@ public class Triangle extends Figure {
         Kat2 = kat2;
     }
 
-    public int getHypot(){
-        return (int)Math.sqrt(Kat1*Kat1+Kat2*Kat2);
+    public int getHypot() {
+        return (int) Math.sqrt(Kat1 * Kat1 + Kat2 * Kat2);
     }
 
     @Override
     public int getSquare() {
-        return Kat1*Kat2/2;
+        return Kat1 * Kat2 / 2;
     }
 
     @Override
